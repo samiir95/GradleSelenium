@@ -45,10 +45,10 @@ public class TestBase2 {
 		
 		
 		// Selenium Grid Local
-		//driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps));
+		driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps));
 		
 		// Run on saucelabs on cloud
-		driver.set(new RemoteWebDriver(new URL(sauceURL), caps));
+		//driver.set(new RemoteWebDriver(new URL(sauceURL), caps));
 		
 		getDriver().navigate().to(baseURL);
 		getDriver().manage().window().maximize();
